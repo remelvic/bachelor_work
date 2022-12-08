@@ -7,7 +7,7 @@ import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 
 public class EmailSendViaAPI {
-    private static final String DOMAIN_NAME = "sandbox9d1c0d4eef004223a13e3fada2ff083a.mailgun.org";
+    
 
     public static JsonNode sendSimpleMessage() throws UnirestException {
         HttpResponse<JsonNode> request = Unirest.post("https://api.mailgun.net/v3/" + DOMAIN_NAME + "/messages")
